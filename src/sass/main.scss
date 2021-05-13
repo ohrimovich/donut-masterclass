@@ -1,7 +1,11 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+@import './fonts';
+@import './base';
+@import './header';
+@import './hero';
+@import './mobile-menu';
+@import './about-us';
+@import './program';
+@import './reviews';
+@import './registration';
+@import './contact';
+@import './footer';
