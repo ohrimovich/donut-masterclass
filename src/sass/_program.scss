@@ -24,14 +24,11 @@
   }
 
   &::before {
-    content: '';
+    content: '>';
     display: inline-block;
-    width: 10px;
-    height: 10px;
     vertical-align: inherit;
-    margin-right: 10px;
+    margin-right: 4px;
     border-radius: 50%;
-    background-color: var(--button-color);
   }
 }
 
@@ -62,7 +59,6 @@
 }
 
 .points-list__item {
-  // position: relative;
   display: block;
   flex-basis: calc((100% - 5px * 2) / 2);
   margin-top: 62px;
