@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* caveat-brush-regular - latin */
+@font-face {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/caveat-brush-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/caveat-brush-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/caveat-brush-v6-latin-regular.woff2") format("woff2"), url("../fonts/caveat-brush-v6-latin-regular.woff") format("woff"), url("../fonts/caveat-brush-v6-latin-regular.ttf") format("truetype"), url("../fonts/caveat-brush-v6-latin-regular.svg#CaveatBrush") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-regular.woff") format("woff"), url("../fonts/montserrat-v15-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v15-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-500.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-500.woff") format("woff"), url("../fonts/montserrat-v15-latin-500.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-500.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+/* montserrat-500italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v15-latin-500italic.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-500italic.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-500italic.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-500italic.woff") format("woff"), url("../fonts/montserrat-v15-latin-500italic.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-500italic.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+
+:root {
+  --primary-background-color: #fef3e4;
+  --main-text-color: #2e2520;
+  --button-color: #ab816c;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 319.98px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 767.99px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1279.98px) {
+  .container {
+    width: 1280px;
+  }
+}
+
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--main-text-color);
+}
+
+h1 {
+  font-family: Caveat Brush;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.bold {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.italic {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.reviews__container {
+  padding-top: 24px;
+  text-align: center;
+}
+
+.reviews__title {
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+.reviews__picture {
+  border-radius: 50%;
+  max-width: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+}
+
+.rating-result {
+  margin: 0 auto 15px;
+}
+
+.rating-result span {
+  padding: 0;
+  font-size: 32px;
+  margin: 0 3px;
+  line-height: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+
+.rating-result > span:before {
+  content: '★';
+}
+
+.rating-result > span.active {
+  color: var(--button-color);
+  text-shadow: 1px 1px burlywood;
+}
+
+.reviews__name {
+  font-family: Montserrat;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: var(--main-text-color);
+  margin-bottom: 15px;
+}
+
+.reviews__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+.reviews__number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--button-color);
+}
+
+.reviews__number::before {
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background-color: currentColor;
+}
+
+.reviews__number::after {
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  margin-left: 12px;
+  vertical-align: middle;
+  background-color: currentColor;
+}
+/*# sourceMappingURL=main.css.map */
