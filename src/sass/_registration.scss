@@ -1,5 +1,8 @@
 .registration {
   background-color: teal;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 0px 0px 150px;
+  // transform: rotate(90deg);
 }
 
 .registration__header {
@@ -16,9 +19,8 @@
 
 .registration__input {
   width: 100%;
-  margin-bottom: 25px;
 }
 
-.registration__input:last-child {
-  margin-bottom: 40px;
+.registration__input:not(:last-child) {
+  margin-bottom: 25px;
 }
