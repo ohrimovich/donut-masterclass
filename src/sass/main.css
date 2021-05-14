@@ -141,16 +141,19 @@ h1 {
 
 .about__title {
   font-family: Caveat Brush;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 2.71;
   text-align: center;
   color: var(--main-text-color);
 }
 
+.about__title:not(:last-child) {
+  margin-bottom: 25px;
+}
+
 .about__text {
   font-family: Montserrat;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
   color: var(--main-text-color);
@@ -159,7 +162,7 @@ h1 {
 .btn-more {
   font-family: Caveat Brush;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 3.61;
   text-align: center;
