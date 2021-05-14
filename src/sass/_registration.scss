@@ -1,19 +1,47 @@
 .registration {
-  background-color: teal;
+  // width: 290px;
+  // margin-left: auto;
+  // margin-right: auto;
+  background-color: #fffff9;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-  border-radius: 150px 0px 0px 150px;
-  // transform: rotate(90deg);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
 }
 
 .registration__header {
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 2.7;
   padding-top: 15px;
   margin-bottom: 11px;
   text-align: center;
 }
+.registration__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+}
 
-.registration__text-price::after {
+.registration__text--info {
+  margin-bottom: 25px;
+}
+
+.reg-text__thumb {
+  position: relative;
+}
+
+.reg-text__thumb::after {
   content: '';
-  margin-top: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
   border: 1px solid rgba(171, 129, 108, 0.5);
 }
 
