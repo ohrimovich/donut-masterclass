@@ -1,0 +1,88 @@
+.reviews__container {
+  text-align: center;
+}
+
+.reviews__title {
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 2.71;
+
+  margin-bottom: 15px;
+}
+
+.reviews__picture {
+  border-radius: 50%;
+  max-width: 110px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+}
+
+.rating-result {
+  margin: 0 auto 15px;
+}
+
+.rating-result span {
+  padding: 0;
+  font-size: 32px;
+  margin: 0 3px;
+  line-height: 1;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+  content: '★';
+}
+.rating-result > span.active {
+  color: var(--button-color);
+  text-shadow: 1px 1px burlywood;
+}
+
+.reviews__name {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+
+  color: var(--main-text-color);
+
+  margin-bottom: 15px;
+}
+
+.reviews__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+.reviews__number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--button-color);
+}
+
+.reviews__number::before {
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background-color: currentColor;
+}
+
+.reviews__number::after {
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  margin-left: 12px;
+  vertical-align: middle;
+  background-color: currentColor;
+}
