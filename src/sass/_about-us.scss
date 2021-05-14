@@ -12,13 +12,12 @@
     }
 
     @media screen and (min-width: 768px){
-        flex-basis: calc(100% - 12px * 2);
         max-width: 329px;   
     }
 
 }
 
-.article {
+.content {
 
     @media screen and (max-width: 767px){
         max-width: 290px;
@@ -31,7 +30,7 @@
 
 }
 
-.article__title {
+.content__title {
     font-family: Caveat Brush;
     font-weight: 400;
     font-size: 24px;
@@ -43,19 +42,19 @@
     }
 }
 
-.article__item {
+.content__item {
     font-family: Montserrat;
     font-size: 16px;
     line-height: 1.25;
     color: var(--main-text-color);
 
     
-    &:first-child {
+    &:not(:last-child) {
         margin-bottom: 1.25em;
     }
  }
 
-.btn-more {
+.content__btn-more {
     font-family: Caveat Brush;
     font-style: normal;
     font-weight: 400;

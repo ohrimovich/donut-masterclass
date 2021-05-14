@@ -155,26 +155,24 @@ h1 {
 
 @media screen and (min-width: 768px) {
   .about__picture {
-    -ms-flex-preferred-size: calc(100% - 12px * 2);
-        flex-basis: calc(100% - 12px * 2);
     max-width: 329px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .article {
+  .content {
     max-width: 290px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .article {
+  .content {
     max-width: 336px;
     margin-left: 24px;
   }
 }
 
-.article__title {
+.content__title {
   font-family: Caveat Brush;
   font-weight: 400;
   font-size: 24px;
@@ -183,19 +181,19 @@ h1 {
 }
 
 @media screen and (max-width: 767px) {
-  .article__title {
+  .content__title {
     text-align: center;
   }
 }
 
-.article__item {
+.content__item {
   font-family: Montserrat;
   font-size: 16px;
   line-height: 1.25;
   color: var(--main-text-color);
 }
 
-.article__item:first-child {
+.content__item:not(:last-child) {
   margin-bottom: 1.25em;
 }
 
