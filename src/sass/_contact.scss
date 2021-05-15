@@ -27,10 +27,6 @@
   border-bottom: 1px solid var(--button-color);
   color: var(--button-color);
 
-  &:focus {
-    outline: none;
-  }
-
   &::placeholder {
     font-family: Montserrat, sans-serif;
     font-style: normal;

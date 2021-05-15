@@ -1,3 +1,7 @@
+.footer {
+  position: relative;
+}
+
 .icon {
   fill: var(--main-text-color);
 }
@@ -31,8 +35,10 @@
 
 .footer__contacts::after {
   position: absolute;
-  top: 3482px;
+  z-index: -1;
+  //top: 3482px;
   left: 233px;
+  transform: translateY(-30%);
   display: block;
   content: '';
   width: 113px;
