@@ -1,3 +1,9 @@
+.reg-section {
+  @media screen and (min-width: 768px) {
+    position: relative;
+  }
+}
+
 .registration {
   background-color: #fffff9;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
@@ -16,7 +22,13 @@
   padding-top: 15px;
   padding-bottom: 11px;
   text-align: center;
+
+   @media screen and (min-width: 768px) {
+    position: absolute;
+  }
 }
+}
+
 .reg-thumb__text {
   width: 114px;
   margin-left: auto;
@@ -114,7 +126,7 @@
 
   color: #ffffff;
 
-  background-color: #ab816c;
+  background-color: var(--button-color);
   border: none;
   border-radius: 25px;
 }
