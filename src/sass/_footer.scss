@@ -24,7 +24,6 @@
 }
 
 .contacts__icon {
-  //margin-right: 3px;
   fill: var(--main-text-color);
 }
 
@@ -36,7 +35,7 @@
 .footer__contacts::after {
   position: absolute;
   z-index: -1;
-  //top: 3482px;
+
   left: 233px;
   transform: translateY(-30%);
   display: block;
@@ -44,7 +43,6 @@
   width: 113px;
   height: 99px;
   background-repeat: no-repeat;
-  //background-color: #e5e5e5;
   background-size: contain;
   background-image: url(../images/mobile/footer_mobile.png);
 }
