@@ -68,10 +68,34 @@
   width: 100%;
   border: none;
   border-bottom: 1px solid #ab816c;
+
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 .reg-inputs__item:not(:last-child) {
   margin-bottom: 25px;
+}
+
+.reg-inputs__item:focus {
+  outline: 2px solid #ab816c;
+  border-bottom: none;
+}
+
+.reg-inputs__item::placeholder {
+  font-family: Montserrat;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.reg-inputs__item:not(:placeholder-shown):required:valid {
+  border: 1px solid #008000;
+}
+
+.reg-inputs__item:not(:placeholder-shown):required:invalid {
+  border: 1px solid #ff0000;
 }
 
 .registration__btn {
@@ -91,12 +115,4 @@
   background-color: #ab816c;
   border: none;
   border-radius: 25px;
-}
-
-.registration__input::placeholder {
-  font-family: Montserrat;
-
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(171, 129, 108, 0.5);
 }
