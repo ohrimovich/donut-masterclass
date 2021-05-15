@@ -5,6 +5,13 @@
   border-top-right-radius: 150px;
   padding-left: 13px;
   padding-right: 12px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px;
+  }
 }
 
 .registration__title {
@@ -54,6 +61,10 @@
 .reg-thumb {
   width: 100%;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+    width: 114px;
+  }
 }
 
 .reg-thumb::after {
@@ -64,6 +75,13 @@
   left: 0;
   border: none;
   border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+
+  @media screen and (min-width: 768px) {
+    width: 190px;
+    transform: rotate(90deg);
+    right: 30px;
+    bottom: 0;
+  }
 }
 
 .registration__form {
@@ -71,6 +89,14 @@
   flex-direction: column;
   align-items: center;
   margin-top: 31px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 54px;
+    padding-bottom: 53px;
+  }
 }
 
 .registration__label {
@@ -135,4 +161,6 @@
   background-color: var(--button-color);
   border: none;
   border-radius: 25px;
+
+  cursor: pointer;
 }
