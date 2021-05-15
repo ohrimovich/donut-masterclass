@@ -9,6 +9,7 @@
   }
 
   @media screen and (min-width: 1279.98px) {
+    position: relative;
     padding-left: 229px;
 
     &::before {
@@ -16,9 +17,9 @@
       position: absolute;
       width: 178px;
       height: 421px;
-      left: -33px;
-      top: 166px;
-      transform: rotate(12.22deg);
+      left: 0px;
+      top: 22px;
+      // transform: rotate(12.22deg);
       background-color: var(--primary-background-color);
       background-image: url(../images/desktop/header-spoon_desktop.png);
       background-repeat: no-repeat;
