@@ -45,6 +45,12 @@
   border-bottom: 1px solid rgba(171, 129, 108, 0.5);
 }
 
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .registration__label {
   display: block;
   font-size: 16px;
@@ -64,26 +70,20 @@
 }
 
 .registration__btn {
+  height: 40px;
+  width: 145px;
   margin-top: 37px;
   margin-bottom: 47px;
-  // padding-top: 0;
-  // padding-bottom: 0;
-  // padding-left: 46px;
-  // padding-right: 47px;
-  min-width: 145px;
-  height: 40px;
 
   font-family: Caveat Brush;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 3.6;
-
-  text-align: center;
+  // line-height: 3.6;
 
   color: #ffffff;
 
-  background: #ab816c;
+  background-color: #ab816c;
   border: none;
   border-radius: 25px;
 }
