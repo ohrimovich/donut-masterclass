@@ -1,0 +1,118 @@
+.registration {
+  background-color: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+}
+
+.registration__title {
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.7;
+  padding-top: 15px;
+  padding-bottom: 11px;
+  text-align: center;
+}
+.reg-thumb__text {
+  width: 114px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 500;
+
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.reg-thumb__text:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.reg-thumb {
+  width: 100%;
+  position: relative;
+}
+
+.reg-thumb::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+  border: none;
+  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 31px;
+}
+
+.registration__label {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.reg-inputs {
+  margin-top: 17px;
+}
+
+.reg-inputs__item {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ab816c;
+
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.reg-inputs__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.reg-inputs__item:focus {
+  outline: 2px solid #ab816c;
+  border-bottom: none;
+}
+
+.reg-inputs__item::placeholder {
+  font-family: Montserrat;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(171, 129, 108, 0.5);
+}
+
+.reg-inputs__item:not(:placeholder-shown):required:valid {
+  border: 1px solid #008000;
+}
+
+.reg-inputs__item:not(:placeholder-shown):required:invalid {
+  border: 1px solid #ff0000;
+}
+
+.registration__btn {
+  height: 40px;
+  width: 145px;
+  margin-top: 37px;
+  margin-bottom: 47px;
+
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  // line-height: 3.6;
+
+  color: #ffffff;
+
+  background-color: #ab816c;
+  border: none;
+  border-radius: 25px;
+}
