@@ -1,34 +1,17 @@
-// h1 {
-//   font-family: Caveat Brush;
-//   font-size: 64px;
-//   font-style: normal;
-//   font-weight: 400;
-//   line-height: 65px;
-//   letter-spacing: 0em;
-//   text-align: left;
-// }
-// .bold {
-//   font-family: Montserrat;
-//   font-size: 20px;
-//   font-style: normal;
-//   font-weight: 500;
-//   line-height: 24px;
-//   letter-spacing: 0em;
-//   text-align: right;
-// }
-
-// .italic {
-//   font-family: Montserrat;
-//   font-size: 16px;
-//   font-style: italic;
-//   font-weight: 500;
-//   line-height: 65px;
-//   letter-spacing: 0em;
-//   text-align: center;
-// }
 .icon {
   width: 20px;
   height: 20px;
+}
+.icon-close {
+  display: none;
+}
+.is-open {
+  .icon-close {
+    display: block;
+  }
+  .icon-menu {
+    display: none;
+  }
 }
 .mobile-menu-btn {
 z-index: 100;
@@ -39,4 +22,12 @@ border: none;
 position: fixed;
 top: 5vw;
 right: 5vw;
+
+  @media screen and (min-width: 480px) and (max-width: 766.98px) {
+    top: 2vw;
+    right: 2vw;
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
