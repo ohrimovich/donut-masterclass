@@ -43,10 +43,6 @@
     @media screen and (max-width: 767px) {
         text-align: center;  
     }
-
-    // @media screen and (min-width: 1279px){
-    //    margin-top: 67px; 
-    // }
 }
 
 .content__item {
@@ -56,7 +52,6 @@
     color: var(--main-text-color);
 
     @media screen and (min-width: 1279px){
-        font-family: Montserrat;
         font-weight: 400;
         font-size: 18px;
         line-height: 1.22; 
@@ -65,26 +60,26 @@
     &:not(:last-child) {
         margin-bottom: 1.25em;
     }
-
-    &:last-child {
-        @media screen and (max-width: 1279px){
-            display: none;
-        }
-    }
  }
 
 .content__btn-more {
     font-family: Caveat Brush;
     font-weight: 400;
     font-size: 18px;
-    // line-height: 3.61;
+    line-height: 3.61;
     text-align: center;
     color: var(--button-color);
 
     border: none;
     background-color: transparent;
 
-    @media screen and (min-width: 1279px){
+    @media screen and (min-width: 1280px){
         display: none;
     }
+}
+
+@media screen and (max-width: 1279px){
+    #more {
+        display: none;
+    }  
 }
