@@ -23,6 +23,13 @@
       background-image: url(../images/desktop/header-spoon_desktop.png);
       background-repeat: no-repeat;
       background-size: contain;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/header-spoon_desktop@2x.png);
+      }
     }
   }
 }
