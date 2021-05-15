@@ -11,19 +11,8 @@
 }
 
 .about__picture {
-
-    @media screen and (max-width: 767px){
-        max-width: 290px;   
-    }
-
-    @media screen and (min-width: 768px){
-        max-width: 329px;   
-    }
-
-    @media screen and (min-width: 1279px){
-        max-width: 512px;   
-    }
-
+    max-width: 100%;
+    height: auto;
 }
 
 .content {
