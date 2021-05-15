@@ -5,7 +5,7 @@
   border-top-right-radius: 150px;
 }
 
-.registration__header {
+.registration__title {
   font-family: Caveat Brush;
   font-style: normal;
   font-weight: 400;
@@ -15,7 +15,7 @@
   padding-bottom: 11px;
   text-align: center;
 }
-.registration__text {
+.reg-thumb__text {
   width: 114px;
   margin-left: auto;
   margin-right: auto;
@@ -27,16 +27,16 @@
   text-align: center;
 }
 
-.registration__text:not(:last-child) {
+.reg-thumb__text:not(:last-child) {
   margin-bottom: 25px;
 }
 
-.reg-text__thumb {
+.reg-thumb {
   width: 100%;
   position: relative;
 }
 
-.reg-text__thumb::after {
+.reg-thumb::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -60,17 +60,17 @@
   text-align: center;
 }
 
-.reg-input__thumb {
+.reg-inputs {
   margin-top: 17px;
 }
 
-.registration__input {
+.reg-inputs__item {
   width: 100%;
   border: none;
   border-bottom: 1px solid #ab816c;
 }
 
-.registration__input:not(:last-child) {
+.reg-inputs__item:not(:last-child) {
   margin-bottom: 25px;
 }
 
