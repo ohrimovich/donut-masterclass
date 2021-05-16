@@ -2,6 +2,12 @@
     <div class="container ">
         <h2 class="registration__title registration__title--mobile-hidden">Registration</h2>
         <div class="registration">
+            <picture>
+                <source srcset="images/tablet/registration-donut_tablet.png 1x, images/tablet/registration-donut_tablet@2x.png 2x"  type="image/jpg" media="(min-width:768px)"/>
+                <source srcset="images/desktop/registration-donut_desktop.png 1x, images/desktop/registration-donut_desktop@2x.png 2x"  type="image/jpg" media="(min-width:1280px)"/>
+                
+            <img class="registration__donut" src="images/tablet/registration-donut_tablet.png" alt="" width="196" height="200" />
+            </picture>
     <h2 class="registration__title registration__title--tablet-hidden">Registration</h2>
     
     <div class="reg-thumb">
@@ -10,17 +16,18 @@
         <p class="reg-thumb__text">$ 699</p>
     </div>
     <form class="registration__form" autocomplete="off">
-        <label class="registration__label" >Apply your personal info
-        for registration
+       <div class="registration__label">
+        <label  for="username" >Apply your personal info
+        for registration</label>
         <div class="reg-inputs">
-        <input class="reg-inputs__item" type="text" name="username" placeholder="Your name" required pattern="^[a-zA-Z\s]+$" title="Username should only contain letters of the Latin alphabet">
+        <input class="reg-inputs__item" type="text" name="username" id="username" placeholder="Your name" required pattern="^[a-zA-Z\s]+$" title="Username should only contain letters of the Latin alphabet">
         <input class="reg-inputs__item" type="tel" name="phone" placeholder="Phone number" required pattern="[0-9]{10}" title="Phone number should only contain 10 numbers">
         <input class="reg-inputs__item" type="email" name="email" placeholder="Email" required >
         </div>
-        </label>
-        <button class="button registration__btn" type="submit">Register</button>
-    </form>
+        </div>
+                <button class="button registration__btn" type="submit">Register</button>
+        </form>
     </div>
-</div>
+    </div>
 
 </section>
