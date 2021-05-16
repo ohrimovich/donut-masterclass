@@ -39,3 +39,12 @@
   font-size: 16px;
   line-height: 1.25;
 }
+
+.footer__picture {
+  position: absolute;
+  z-index: -1;
+  right: -26px;
+  bottom: -35px;
+  width: 113px;
+  overflow: hidden;
+}
