@@ -30,23 +30,30 @@ img {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+
+  @media screen and (max-width: 320px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   @media screen and (min-width: 319.98px) {
     width: 320px;
   }
 
   @media screen and (min-width: 767.99px) {
-    width: 768px;
+    width: 634px;
   }
 
   @media screen and (min-width: 1279.98px) {
-    width: 1280px;
+    width: 822px;
   }
 }
 
