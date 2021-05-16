@@ -81,33 +81,6 @@
   }
 }
 
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 145px;
-  height: 40px;
-
-  border-radius: 25px;
-  font-family: Caveat Brush, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 3.61;
-  text-align: center;
-
-  color: #ffffff;
-  background-color: var(--button-color);
-
-  @media screen and (min-width: 1279.98px) {
-    width: 158px;
-    height: 45px;
-
-    font-size: 24px;
-    line-height: 2.71;
-  }
-}
-
 .button__hero {
   margin-left: auto;
   margin-right: auto;
@@ -123,35 +96,6 @@
   }
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    border-radius: 50%;
-    fill: var(--main-text-color);
-    background-color: var(--primary-background-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__icon {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  &__link:focus,
-  &__link:hover {
-    fill: var(--primary-background-color);
-    background-color: var(--button-color);
-  }
-}
 .social-links__hero {
   @media screen and (min-width: 768px) {
     display: flex;
