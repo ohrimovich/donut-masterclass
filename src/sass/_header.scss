@@ -29,9 +29,6 @@
 }
 .logo-page {
   margin-top: 7px;
-  // display: block;
-  // text-align: center;
-  // margin-right: 38px;
 
   @media screen and (min-width: 768px) and (max-width: 1280px) {
     text-align: left;
@@ -39,6 +36,7 @@
 }
 .nav {
   display: flex;
+  z-index: 3;
 
   @media screen and (max-width: 1279.98px) {
     display: none;
@@ -50,30 +48,27 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 1.22;
-  color: #2e2520;
+  color: var(--main-text-color);
   display: flex;
 
   &:not(:last-child) {
     margin-right: 20px;
   }
 }
+.list-item {
+  padding-top: 52px;
+  padding-bottom: 52px;
 
-// .nav-list__item:not(:last-child) {
-//   margin-right: 0;
-
-//   @media screen and (min-width: 1280px) {
-//     margin-right: 50px;
-//   }
-// }
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+  }
+}
 
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fef3e4;
-  // padding-top: 31px;
-  // padding-bottom: 57px;
-  // padding-left: 229px;
 
   @media screen and (min-width: 768.98px) and (max-width: 1279.98px) {
     padding-left: 68px;
@@ -81,4 +76,23 @@
 }
 .nav-list {
   display: inline-flex;
+}
+.bg-img {
+  position: absolute;
+  z-index: 2;
+
+  @media screen and (max-width: 768.98px) {
+    top: 0;
+    left: 0;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1279.98px) {
+    top: 0;
+    right: 137px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: -0;
+    right: 0;
+  }
 }
