@@ -15,7 +15,7 @@
   &.is-open {
     right: 0;
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 1279.98px) {
     display: none;
   }
 }
@@ -36,8 +36,8 @@
   }
 }
 .logo {
-  width: 190px;
-  height: 85px;
+  // width: 190px;
+  // height: 85px;
   margin-top: 25px;
   justify-content: center;
   text-align: center;
