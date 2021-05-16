@@ -1,17 +1,17 @@
-.registration__donut {
-  @media screen and (max-width: 767.98px) {
-    display: none;
-  }
+// .registration__donut {
+//   @media screen and (max-width: 767.98px) {
+//     display: none;
+//   }
 
-  @media screen and (min-width: 768px) {
-    display: block;
-    position: absolute;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    transform: rotate(343deg);
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     display: block;
+//     position: absolute;
+//     z-index: -999;
+//     top: 0;
+//     left: 0;
+//     transform: rotate(343deg);
+//   }
+// }
 
 .registration {
   background-color: #fffff9;
@@ -36,6 +36,23 @@
     padding-top: 54px;
     padding-bottom: 53px;
     // padding: 35px 21px 35px 35px;
+  }
+}
+
+.registration::before {
+  content: '';
+  background-image: url(../images/tablet/registration-donut_tablet.png);
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    z-index: -999;
+    top: 0;
+    left: 0;
+    transform: rotate(343deg);
   }
 }
 
