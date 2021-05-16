@@ -3,14 +3,16 @@
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-top-left-radius: 150px;
   border-top-right-radius: 150px;
+  margin-top: 30px;
   padding-left: 13px;
   padding-right: 12px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     border-radius: 150px;
+    margin-top: 0;
   }
 }
 
@@ -42,28 +44,12 @@
   }
 }
 
-.reg-thumb__text {
-  width: 114px;
-  margin-left: auto;
-  margin-right: auto;
-
-  font-weight: 500;
-
-  font-size: 18px;
-  line-height: 1.2;
-  text-align: center;
-}
-
-.reg-thumb__text:not(:last-child) {
-  margin-bottom: 25px;
-}
-
 .reg-thumb {
   width: 100%;
   position: relative;
 
   @media screen and (min-width: 768px) {
-    width: 114px;
+    // width: 114px;
   }
 }
 
@@ -82,6 +68,22 @@
     right: 30px;
     bottom: 0;
   }
+}
+
+.reg-thumb__text {
+  width: 114px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 500;
+
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.reg-thumb__text:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .registration__form {
@@ -163,4 +165,8 @@
   border-radius: 25px;
 
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 25px;
+  }
 }
