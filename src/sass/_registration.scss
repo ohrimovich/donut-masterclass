@@ -9,10 +9,14 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: baseline;
     border-radius: 150px;
     margin-top: 0;
+    // width: 100%;
+    padding-left: 21px;
+    padding-right: 35px;
+    // padding: 35px 21px 35px 35px;
   }
 }
 
@@ -46,36 +50,32 @@
 
 .reg-thumb {
   width: 100%;
-  position: relative;
+  // position: relative;
 
   @media screen and (min-width: 768px) {
-<<<<<<< Updated upstream
-    // width: 114px;
-=======
     width: 114px;
-    margin-left: auto;
+    // margin-left: auto;
     margin-right: 60px;
->>>>>>> Stashed changes
   }
 }
 
-.reg-thumb::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  bottom: -20px;
-  left: 0;
-  border: none;
-  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+// .reg-thumb::after {
+//   content: '';
+//   position: absolute;
+//   width: 100%;
+//   bottom: -20px;
+//   left: 0;
+//   border: none;
+//   border-bottom: 1px solid rgba(171, 129, 108, 0.5);
 
-  @media screen and (min-width: 768px) {
-    width: 190px;
-    transform: rotate(90deg);
-    top: -35px;
-    left: 30px;
-    bottom: 0;
-  }
-}
+// @media screen and (min-width: 768px) {
+//   width: 190px;
+//   transform: rotate(90deg);
+//   top: -35px;
+//   left: 30px;
+//   bottom: 0;
+// }
+// }
 
 .reg-thumb__text {
   width: 114px;
@@ -87,10 +87,18 @@
   font-size: 18px;
   line-height: 1.2;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
 }
 
 .reg-thumb__text:not(:last-child) {
   margin-bottom: 25px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 34px;
+  }
 }
 
 .registration__form {
@@ -98,6 +106,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 31px;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -108,11 +117,30 @@
   }
 }
 
+.registration__form::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: -11px;
+  left: 0;
+  border: none;
+  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+
+  @media screen and (min-width: 768px) {
+    text-align: right;
+  }
+}
+
 .registration__label {
   display: block;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 234px;
+    text-align: left;
+  }
 }
 
 .reg-inputs {
