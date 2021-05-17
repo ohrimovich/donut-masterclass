@@ -1,10 +1,21 @@
 import refs from './refs';
-export default () => {
-  if (refs.moreContent.classList.contains('moreContent')) {
-    refs.moreContent.classList.remove('moreContent');
-    refs.actionButton.textContent = 'Less';
-    return;
+export default evt => {
+  if (evt.currentTarget.classList.contains('content__btn-more')) {
+    if (refs.abouMoreContent.classList.contains('moreContentIsHiden')) {
+      refs.abouMoreContent.classList.remove('moreContentIsHiden');
+      refs.aboutButton.textContent = 'Less';
+      return;
+    }
+    refs.abouMoreContent.classList.add('moreContentIsHiden');
+    refs.aboutButton.textContent = 'Read more';
   }
-  refs.moreContent.classList.add('moreContent');
-  refs.actionButton.textContent = 'Read more';
+  if (evt.currentTarget.classList.contains('program__button')) {
+    if (refs.programMoreContent.classList.contains('program__more-hiden')) {
+      refs.programMoreContent.classList.remove('program__more-hiden');
+      refs.programButton.textContent = 'Less';
+      return;
+    }
+    refs.programMoreContent.classList.add('program__more-hiden');
+    refs.programButton.textContent = 'Read more';
+  }
 };
