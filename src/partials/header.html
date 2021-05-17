@@ -1,0 +1,43 @@
+<header>
+  <div class="container">
+    <div class="header">
+
+      <div class="bg-img">
+          <picture>
+      <source srcset="images/desktop/header-donuts_desktop.png 1x, images/desktop/header-donuts_desktop@2x.png 2x"
+        media="(min-width: 1280px)" width="793" height="831"
+      />
+      <source srcset="images/tablet/header-donuts_tablet.png 1x, images/tablet/header-donuts_tablet@2x.png 2x"
+        media="(min-width: 768px)" width="378" height="396"
+      />
+      <source srcset="images/mobile/header-donuts_mobile.png 1x, images/mobile/header-donuts_mobile@2x.png 2x"
+        media="(max-width: 767px)" width="130" height="165"
+      />
+      <img src="images/desktop/header-donuts_desktop.png" alt="donuts"/>
+    </picture>
+      </div>
+
+      <div class="logo-page">
+        <svg width="96" height="43" class="logo-page__svg">
+          <use href="./images/icons.svg#icon-logo"></use>
+        </svg>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list list">
+          <li class="nav-list__item"><a class="link list-item" href="#about-us">About us</a></li>
+          <li class="nav-list__item"><a class="link list-item" href="#program">Program</a></li>
+          <li class="nav-list__item"><a class="link list-item" href="#reviews">Reviews</a></li>
+          <li class="nav-list__item"><a class="link list-item" href="#contact">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button class="mobile-menu-btn" data-menu-button>
+      <svg class="icon">
+        <use class="icon-menu" width="30" height="16" href="./images/icons.svg#icon-menu"></use>
+        <use class="icon-close" width="18" height="18" href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</header>
