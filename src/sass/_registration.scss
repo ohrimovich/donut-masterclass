@@ -117,7 +117,7 @@
   }
 }
 
-.registration__title {
+.all-registration__title {
   font-family: Caveat Brush;
   font-style: normal;
   font-weight: 400;
@@ -125,7 +125,7 @@
 
   text-align: center;
 }
-.registration__title--mobile-hidden {
+.all-registration__title--mobile-hidden {
   @media screen and (max-width: 767.98px) {
     display: none;
   }
@@ -140,7 +140,7 @@
   }
 }
 
-.registration__title--tablet-hidden {
+.all-registration__title--tablet-hidden {
   padding-top: 38px;
   margin-bottom: 30px;
 
@@ -149,7 +149,7 @@
   }
 }
 
-.reg-thumb {
+.registration__thumb {
   width: 100%;
 
   @media screen and (min-width: 768px) {
@@ -162,7 +162,7 @@
   }
 }
 
-.reg-thumb__text {
+.registration__text {
   width: 114px;
   margin-left: auto;
   margin-right: auto;
@@ -183,7 +183,7 @@
   }
 }
 
-.reg-thumb__text:not(:last-child) {
+.registration__text:not(:last-child) {
   margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
@@ -194,7 +194,7 @@
   }
 }
 
-.registration__form {
+.reg-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,7 +208,7 @@
   }
 }
 
-.reg {
+.reg-form__thumb {
   display: block;
   text-align: center;
   position: relative;
@@ -219,7 +219,7 @@
   }
 }
 
-.reg::before {
+.reg-form__thumb::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -237,7 +237,7 @@
   }
 }
 
-.reg__label {
+.reg-form__label {
   display: inline-block;
   width: 195px;
   font-size: 16px;
@@ -250,33 +250,34 @@
   }
 }
 
-.reg-inputs {
+.reg-form__list {
   margin-top: 17px;
 }
 
-.reg-inputs__item {
+.reg-form__item {
   width: 100%;
   border: none;
   border-bottom: 1px solid #ab816c;
+  color: var(--main-text-color);
   background-color: #fffff9;
 
   font-size: 16px;
   line-height: 1.25;
 }
 
-.reg-inputs__item:not(:last-child) {
+.reg-form__item:not(:last-child) {
   margin-bottom: 27px;
   @media screen and (min-width: 768px) {
     margin-bottom: 17px;
   }
 }
 
-.reg-inputs__item:focus {
+.reg-form__item:focus {
   outline: 2px solid #ab816c;
   border-bottom: none;
 }
 
-.reg-inputs__item::placeholder {
+.reg-form__item::placeholder {
   font-family: Montserrat;
 
   font-size: 16px;
@@ -284,15 +285,15 @@
   color: rgba(171, 129, 108, 0.5);
 }
 
-.reg-inputs__item:not(:placeholder-shown):required:valid {
+.reg-form__item:not(:placeholder-shown):required:valid {
   border: 1px solid #008000;
 }
 
-.reg-inputs__item:not(:placeholder-shown):required:invalid {
+.reg-form__item:not(:placeholder-shown):required:invalid {
   border: 1px solid #ff0000;
 }
 
-.registration__btn {
+.reg-form__btn {
   margin-top: 37px;
   margin-bottom: 47px;
   border: none;
