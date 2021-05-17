@@ -9,8 +9,6 @@
   @media screen and (min-width: 768px) {
     position: relative;
     display: flex;
-
-    align-items: baseline;
     border-radius: 150px;
 
     padding-left: 35px;
@@ -104,6 +102,9 @@
     // margin-left: auto;
     margin-right: 60px;
   }
+  @media screen and (min-width: 1280px) {
+    width: 127px;
+  }
 }
 
 .reg-thumb__text {
@@ -120,6 +121,11 @@
   @media screen and (min-width: 768px) {
     text-align: right;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 127px;
+    font-size: 20px;
+  }
 }
 
 .reg-thumb__text:not(:last-child) {
@@ -127,6 +133,9 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 34px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
   }
 }
 
@@ -238,5 +247,9 @@
     margin-left: 25px;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 38px;
   }
 }
