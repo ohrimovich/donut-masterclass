@@ -1,6 +1,13 @@
 .hero {
+  padding-bottom: 5px;
+
+  @media screen and (min-width: 767.99px) {
+    padding-bottom: 90px;
+  }
+
   @media screen and (min-width: 1279.98px) {
     position: relative;
+    padding-bottom: 120px;
 
     &::before {
       content: '';
@@ -23,8 +30,6 @@
     }
   }
 }
-// .hero__container {
-// }
 
 .hero__title {
   max-width: 224px;
@@ -92,6 +97,6 @@
   @media screen and (min-width: 768px) {
     display: inline-flex;
     justify-content: start;
-    background-color: var(--primary-background-color);
+    background-color: transparent;
   }
 }
