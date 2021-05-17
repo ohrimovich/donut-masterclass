@@ -16,7 +16,7 @@
 }
 
 .footer-social__link {
-  background-color: #e5e5e5;
+  background-color: transparent;
 }
 
 .footer__contacts {
@@ -51,8 +51,8 @@
   z-index: -1;
   width: 113px;
   height: 99px;
-  right: 25px;
-  bottom: -15px;
+  right: -26px;
+  bottom: -35px;
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -68,8 +68,8 @@
   @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     width: 207px;
     height: 182px;
-    right: 60px;
-    bottom: -10px;
+    right: -60px;
+    bottom: -38px;
 
     background-image: url(../images/tablet/footer_tablet.png);
 
@@ -84,8 +84,8 @@
   @media screen and (min-width: 1200px) {
     width: 362px;
     height: 318px;
-    right: 43px;
-    bottom: -129px;
+    right: -43px;
+    bottom: -134px;
 
     background-image: url(../images/desktop/footer_desktop.png);
 
