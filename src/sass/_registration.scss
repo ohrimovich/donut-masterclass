@@ -9,7 +9,7 @@
   @media screen and (min-width: 768px) {
     position: relative;
     display: flex;
-    justify-content: space-around;
+
     align-items: baseline;
     border-radius: 150px;
 
@@ -17,6 +17,11 @@
     padding-right: 21px;
     padding-top: 54px;
     padding-bottom: 53px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 107px;
+    padding-right: 98px;
   }
 }
 
@@ -139,10 +144,8 @@
   }
 }
 
-.registration__label {
+.reg {
   display: block;
-  font-size: 16px;
-  line-height: 1.25;
   text-align: center;
   position: relative;
 
@@ -152,7 +155,7 @@
   }
 }
 
-.registration__label::before {
+.reg::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -167,6 +170,19 @@
     transform: rotate(90deg);
     top: 50%;
     left: -53%;
+  }
+}
+
+.reg__label {
+  display: inline-block;
+  width: 195px;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 1280px) {
+    width: 220px;
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 
