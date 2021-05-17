@@ -1,102 +1,168 @@
+.all-registration {
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 75px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 98px;
+  }
+}
+
 .registration {
   background-color: #fffff9;
   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   border-top-left-radius: 150px;
   border-top-right-radius: 150px;
-  margin-top: 30px;
   padding-left: 13px;
   padding-right: 12px;
 
   @media screen and (min-width: 768px) {
     position: relative;
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
     border-radius: 150px;
-    margin-top: 0;
 
     padding-left: 35px;
     padding-right: 21px;
     padding-top: 54px;
     padding-bottom: 53px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 107px;
+    padding-right: 98px;
+  }
 }
 
 .registration::before {
-  position: absolute;
-  display: block;
-  z-index: -1;
-  content: '';
-  width: 235px;
-  height: 265px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/tablet/registration-donut_tablet.png);
-  top: -50px;
-  left: -10%;
-
   @media screen and (max-width: 767.98px) {
     display: none;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    content: '';
+    width: 235px;
+    height: 265px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/tablet/registration-donut_tablet.png);
+    top: -50px;
+    left: -11%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/registration-donut_tablet@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 257px;
+    height: 255px;
+    background-image: url(../images/desktop/registration-donut_desktop.png);
+    top: -50px;
+    left: -20%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/registration-donut_desktop@2x.png);
+    }
   }
 }
 
 .registration::after {
-  position: absolute;
-  display: block;
-  z-index: -1;
-  content: '';
-  width: 280px;
-  height: 374px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url(../images/tablet/registration-confetti_tablet.png);
-  bottom: -50%;
-  right: -10%;
-
   @media screen and (max-width: 767.98px) {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    content: '';
+    width: 280px;
+    height: 374px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/tablet/registration-confetti_tablet.png);
+    bottom: -50%;
+    right: -10%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/registration-confetti_tablet@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 606px;
+    height: 589px;
+
+    background-image: url(../images/desktop/registration-confetti_desktop.png);
+    bottom: -105%;
+    right: -27%;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/registration-confetti_desktop@2x.png);
+    }
+  }
 }
 
-.registration__title {
+.all-registration__title {
   font-family: Caveat Brush;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 2.7;
-  padding-top: 15px;
-  padding-bottom: 11px;
+
   text-align: center;
+}
+.all-registration__title--mobile-hidden {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 10px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 23px;
+    font-size: 36px;
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .registration__title--mobile-hidden {
+.all-registration__title--tablet-hidden {
+  padding-top: 38px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .registration__title--tablet-hidden {
-    display: none;
-  }
-}
-
-.reg-thumb {
+.registration__thumb {
   width: 100%;
 
   @media screen and (min-width: 768px) {
     width: 114px;
-    // margin-left: auto;
+    margin-left: auto;
     margin-right: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 127px;
   }
 }
 
-.reg-thumb__text {
+.registration__text {
   width: 114px;
   margin-left: auto;
   margin-right: auto;
@@ -110,17 +176,25 @@
   @media screen and (min-width: 768px) {
     text-align: right;
   }
+
+  @media screen and (min-width: 1280px) {
+    width: 127px;
+    font-size: 20px;
+  }
 }
 
-.reg-thumb__text:not(:last-child) {
+.registration__text:not(:last-child) {
   margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 34px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 
-.registration__form {
+.reg-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,10 +208,8 @@
   }
 }
 
-.registration__label {
+.reg-form__thumb {
   display: block;
-  font-size: 16px;
-  line-height: 1.25;
   text-align: center;
   position: relative;
 
@@ -147,7 +219,7 @@
   }
 }
 
-.registration__label::before {
+.reg-form__thumb::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -165,32 +237,47 @@
   }
 }
 
-.reg-inputs {
+.reg-form__label {
+  display: inline-block;
+  width: 195px;
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 1280px) {
+    width: 220px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.reg-form__list {
   margin-top: 17px;
 }
 
-.reg-inputs__item {
+.reg-form__item {
   width: 100%;
   border: none;
   border-bottom: 1px solid #ab816c;
+  color: var(--main-text-color);
+  background-color: #fffff9;
 
   font-size: 16px;
   line-height: 1.25;
 }
 
-.reg-inputs__item:not(:last-child) {
+.reg-form__item:not(:last-child) {
   margin-bottom: 27px;
   @media screen and (min-width: 768px) {
     margin-bottom: 17px;
   }
 }
 
-.reg-inputs__item:focus {
+.reg-form__item:focus {
   outline: 2px solid #ab816c;
   border-bottom: none;
 }
 
-.reg-inputs__item::placeholder {
+.reg-form__item::placeholder {
   font-family: Montserrat;
 
   font-size: 16px;
@@ -198,15 +285,15 @@
   color: rgba(171, 129, 108, 0.5);
 }
 
-.reg-inputs__item:not(:placeholder-shown):required:valid {
+.reg-form__item:not(:placeholder-shown):required:valid {
   border: 1px solid #008000;
 }
 
-.reg-inputs__item:not(:placeholder-shown):required:invalid {
+.reg-form__item:not(:placeholder-shown):required:invalid {
   border: 1px solid #ff0000;
 }
 
-.registration__btn {
+.reg-form__btn {
   margin-top: 37px;
   margin-bottom: 47px;
   border: none;
@@ -216,5 +303,9 @@
     margin-left: 25px;
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 38px;
   }
 }
