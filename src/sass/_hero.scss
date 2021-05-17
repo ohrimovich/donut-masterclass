@@ -3,6 +3,37 @@
   background-color: var(--primary-background-color);
 }
 
+.hero__container {
+  @media screen and (min-width: 767.99px) {
+    padding-left: 68px;
+  }
+
+  @media screen and (min-width: 1279.98px) {
+    position: relative;
+    padding-left: 229px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 178px;
+      height: 421px;
+      left: -79px;
+      top: 22px;
+      transform: rotate(12.22deg);
+      background-image: url(../images/desktop/header-spoon_desktop.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/desktop/header-spoon_desktop@2x.png);
+      }
+    }
+  }
+}
+
 .hero__title {
   max-width: 224px;
   margin-left: auto;
@@ -15,14 +46,39 @@
   font-size: 30px;
   line-height: 1.27;
   text-align: center;
+
+  @media screen and (min-width: 767.99px) {
+    margin-left: 0px;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1279.98px) {
+    max-width: 490px;
+    margin-bottom: 15px;
+
+    font-size: 64px;
+    line-height: 1.02;
+  }
 }
 
 .hero__subtitle {
-  margin-bottom: 25px;
+  margin-bottom: 37px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+
+  @media screen and (min-width: 767.99px) {
+    margin-bottom: 26px;
+    text-align: start;
+  }
+
+  @media screen and (min-width: 1279.98px) {
+    max-width: 490px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
 }
 
 .button {
@@ -33,7 +89,7 @@
   height: 40px;
 
   border-radius: 25px;
-  font-family: Caveat Brush;
+  font-family: Caveat Brush, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -42,12 +98,29 @@
 
   color: #ffffff;
   background-color: var(--button-color);
+
+  @media screen and (min-width: 1279.98px) {
+    width: 158px;
+    height: 45px;
+
+    font-size: 24px;
+    line-height: 2.71;
+  }
 }
 
 .button__hero {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 45px;
+
+  @media screen and (min-width: 767.99px) {
+    margin-left: 0px;
+    margin-bottom: 31px;
+  }
+
+  @media screen and (min-width: 1279.98px) {
+    margin-bottom: 65px;
+  }
 }
 
 .social-links {
@@ -77,5 +150,11 @@
   &__link:hover {
     fill: var(--primary-background-color);
     background-color: var(--button-color);
+  }
+}
+.social-links__hero {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: start;
   }
 }
