@@ -101,8 +101,10 @@
     display: none;
   }
 }
-
 .program__more {
+  margin-top: 10px;
+}
+.program__more-hiden {
   @media screen and (max-width: 1279.97px) {
     display: none;
   }
