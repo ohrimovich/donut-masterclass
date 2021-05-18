@@ -10,12 +10,12 @@ export default evt => {
     refs.aboutButton.textContent = 'Read more';
   }
   if (evt.currentTarget.classList.contains('program__button')) {
-    if (refs.programMoreContent.classList.contains('program__more-hiden')) {
-      refs.programMoreContent.classList.remove('program__more-hiden');
+    if (refs.programMoreContent.classList.contains('program__more--hidden')) {
+      refs.programMoreContent.classList.remove('program__more--hidden');
       refs.programButton.textContent = 'Less';
       return;
     }
-    refs.programMoreContent.classList.add('program__more-hiden');
+    refs.programMoreContent.classList.add('program__more--hidden');
     refs.programButton.textContent = 'Read more';
   }
 };
