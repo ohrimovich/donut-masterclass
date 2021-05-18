@@ -6,14 +6,8 @@
   font-weight: 400;
   font-size: 24px;
 
-  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
-    margin-top: 51px;
-  }
-
   @media screen and (min-width: 1200px) {
-    margin-top: 77px;
     font-size: 36px;
-    line-height: 1.8;
   }
 }
 
