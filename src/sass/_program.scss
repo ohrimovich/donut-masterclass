@@ -1,12 +1,18 @@
 .program {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-size: 16px;
   line-height: 1.25;
 
-  @media screen and (max-width: 767.97px) {
-    padding-bottom: 25px;
+  @media screen and (min-width: 767.98px) {
+    padding-bottom: 11px;
   }
 
   @media screen and (min-width: 1279.98px) {
+    padding-top: 33px;
+    padding-bottom: 68px;
+
     font-size: 18px;
     line-height: 1.22;
   }
@@ -35,22 +41,22 @@
 }
 
 .program__title {
+  margin-bottom: 11px;
   text-align: center;
 
   font-family: Caveat Brush;
   font-weight: 400;
   font-size: 24px;
-  line-height: 2.71;
+  line-height: 1.2;
 
   @media screen and (min-width: 767.98px) {
     text-align: start;
   }
 
   @media screen and (min-width: 1279.98px) {
-    margin-bottom: 10px;
+    margin-bottom: 22px;
 
     font-size: 36px;
-    line-height: 1.81;
   }
 }
 
@@ -63,6 +69,8 @@
 }
 
 .program__list {
+  margin-bottom: 10px;
+
   @media screen and (min-width: 1279.98px) {
     margin-bottom: 21px;
   }
@@ -78,33 +86,49 @@
   }
 
   &::before {
-    content: '>';
+    content: '';
+    width: 10px;
+    height: 10px;
     display: inline-block;
     vertical-align: inherit;
-    margin-right: 4px;
+    margin-right: 8px;
     border-radius: 50%;
+    background-color: var(--button-color);
   }
 }
 
 .program__button {
-  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 16px;
   border: none;
 
   font-family: Caveat Brush;
   font-size: 18px;
-  line-height: 3.61;
+  line-height: 1.2;
 
   background-color: transparent;
   color: var(--button-color);
+
+  @media screen and (min-width: 768.98px) {
+    margin-bottom: 0;
+  }
 
   @media screen and (min-width: 1279.98px) {
     display: none;
   }
 }
+
 .program__more {
-  margin-top: 10px;
+  @media screen and (max-width: 1279.97px) {
+    margin-bottom: 10px;
+  }
 }
+
 .program__more--hidden {
+
   @media screen and (max-width: 1279.97px) {
     display: none;
   }
@@ -148,6 +172,20 @@
 
   &:nth-child(odd) {
     transform: translateY(-25px);
+
+    @media screen and (min-width: 767.98px) {
+      transform: translateY(-45px);
+    }
+  }
+
+  &:nth-child(even) {
+    @media screen and (min-width: 767.98px) {
+      transform: translateY(-18px);
+    }
+
+    @media screen and (min-width: 1279.98px) {
+      transform: translateY(5px);
+    }
   }
 
   @media screen and (min-width: 767.98px) {
@@ -157,6 +195,7 @@
 
   @media screen and (min-width: 1279.98px) {
     flex-basis: calc((100% - 32px * 2) / 2);
+    margin-top: 61px;
     margin-left: 32px;
     padding-top: 63px;
     padding-bottom: 11px;
@@ -207,7 +246,7 @@
 }
 
 .points-list__title {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   font-family: Caveat Brush;
   font-weight: 400;
@@ -226,7 +265,7 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 13px;
+  margin-top: 14px;
 
   fill: #674d40;
 
