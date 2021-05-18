@@ -12,6 +12,7 @@
 .icon {
     width: 30px;
     height: 30px;
+    padding-left: 7px;
 }
 .mobile-menu-btn {
   z-index: 100;
@@ -101,22 +102,108 @@
   @media screen and (max-width: 767.98px) {
     top: 0;
     left: 0;
-  }
 
+    animation: animateX50Y100 5000ms infinite 1000ms;
+  }
+  .bg-img::before {
+    content: "translate(-40px, -70px)";
+  }
+  @keyframes animateX50Y100 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(-50px, -100px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
+  }
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     top: 0;
     right: 137px;
+
+    animation: animateX50 4000ms infinite 2900ms;
+  }
+  .bg-img::before {
+    content: "translateY(100px)";
   }
 
   @media screen and (min-width: 1280px) {
     top: 0;
     right: 0;
+
+    animation: animateX50Y100 9000ms infinite 8000ms;
+  }
+
+  .bg-img::before {
+    content: "translate(-50px, -70px)";
+  }
+
+  @keyframes animateX50 {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes animateY110 {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(110px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes animateX50Y100 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(-50px, -100px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
   }
 }
 
-.logo-page__svg {
+.logo-page__svg::before {
   @media screen and (min-width: 1280px) {
     width: 158px;
     height: 71px;
+  }
+}
+.logo-page__svg {
+  animation: animate125 3000ms infinite 1000ms;
+}
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
