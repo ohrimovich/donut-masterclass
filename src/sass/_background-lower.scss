@@ -1,0 +1,23 @@
+@import './reviews';
+@import './registration';
+@import './contact';
+@import './footer';
+
+.background {
+  position: relative;
+  //   background-image: url(../images/mobile/reviews-background_mobile@2x.png);
+  background-image: url(../images/mobile/mobile.svg);
+  //   background-size: cover;
+  background-repeat: no-repeat;
+  //   background-position: center;
+  z-index: -5;
+
+  //   @media screen and (min-width: 758px) {
+  //     // background-image: url(../images/tablet/reviews-background_tablet@2x.png);
+  //     background-image: url(../images/tablet/tablet.svg);
+  //   }
+  //   @media screen and (min-width: 798px) {
+  //     // background-image: url(../images/desktop/reviews-background_desktop@2x.png);
+  //     background-image: url(../images/desktop/dectop.svg);
+  //   }
+}
