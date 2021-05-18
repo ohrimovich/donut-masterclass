@@ -1,27 +1,53 @@
+// .about {
+//   padding-bottom: 37px;
+// }
+
 .about-container {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+    // display: flex;
+    // align-items: center;
+    width: 690px;
   }
 
-  @media screen and (min-width: 1279px) {
-    margin-left: 56px;
+  @media screen and (min-width:1280px){
+    width: 980px;
+  }
+}
+
+.about__picture {
+
+  @media screen and (min-width: 768px){
+    position: absolute;
+    display: block;
+    content: "";
+
+    top: 6px;
+    left: -20px;
+  }
+
+  @media screen and (min-width: 1280px){
+    top: -50px;
+    left: -70px;
   }
 }
 
 .content {
+
   @media screen and (max-width: 767px) {
     max-width: 290px;
   }
 
   @media screen and (min-width: 768px) {
     max-width: 336px;
-    margin-left: 24px;
+    margin-left: 330px;
   }
 
-  @media screen and (min-width: 1279px) {
+  @media screen and (min-width: 1280px) {
     max-width: 392px;
-    margin-left: 76px;
+    margin-left: 530px;
+
   }
 }
 
@@ -29,11 +55,31 @@
   font-family: Caveat Brush;
   font-weight: 400;
   font-size: 24px;
-  line-height: 2.71;
+  padding-bottom: 16px;
+  padding-top: 8px;
   color: var(--main-text-color);
 
   @media screen and (max-width: 767px) {
     text-align: center;
+  }
+
+  @media screen and (min-width: 768px){
+    padding-bottom: 18px;
+    padding-top: 18px;
+  }
+
+  @media screen and (min-width: 1280px){
+    font-size: 36px;
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+
+.content__list {
+
+  @media screen and (min-width: 1280px){
+    width: 380px;
+    height: 394px;
   }
 }
 
@@ -51,12 +97,6 @@
 
   &:not(:last-child) {
     margin-bottom: 1.25em;
-  }
-
-  @media screen and (max-width: 1279px) {
-    // &:last-child {
-    //   display: none;
-    // }
   }
 }
 
