@@ -3,15 +3,18 @@
   overflow: hidden;
 }
 
-.footer-social__list {
-  margin-top: 47px;
+.footer__container {
+  padding-top: 47px;
+  padding-bottom: 19px;
 
   @media screen and (min-width: 768px) and (max-width: 1199.99px) {
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 21px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 82px;
+    padding-top: 82px;
+    padding-bottom: 21px;
   }
 }
 
@@ -23,16 +26,13 @@
   display: flex;
   justify-content: space-between;
   margin-top: 34px;
-  margin-bottom: 19px;
 
   @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     margin-top: 51px;
-    margin-bottom: 21px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 35px;
-    margin-bottom: 21px;
   }
 }
 
