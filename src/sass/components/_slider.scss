@@ -1,0 +1,55 @@
+.sleder__items {
+  opacity: 0.4;
+  text-align: center;
+  width: 400px;
+}
+.slick-list {
+  overflow: hidden;
+
+  & .reviews {
+    display: none;
+  }
+  & img {
+    width: 110px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.slick-track {
+  display: flex;
+}
+.slick-center {
+  opacity: 1;
+  & img {
+    width: 186px;
+    height: 186px;
+  }
+
+  & .reviews {
+    display: block;
+  }
+}
+.pagingInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 24px;
+
+  text-align: center;
+  &::before {
+    margin-right: 10px;
+    display: inline-block;
+    content: '';
+    border-bottom: 1px solid black;
+    width: 20px;
+  }
+  &::after {
+    margin-left: 10px;
+    display: inline-block;
+    content: '';
+    border-bottom: 1px solid black;
+    width: 20px;
+  }
+}
