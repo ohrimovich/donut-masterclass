@@ -32,10 +32,31 @@
     <script src="./index.js"></script>
     <script>
       $(function () {
-        $('.wraper').slick({
+        $('.foto-slider').slick({
           infinite: true,
           dots: false,
           arrows: false,
+          asNavFor: '.slider-holder',
+
+          slidesToScroll: 1,
+          // adaptiveHeight: true,
+          slidesToShow: 3,
+          centerMode: true,
+
+          responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                centerMode: false,
+              },
+            },
+          ],
+
+          // adaptiveHeight: true,
+          // centerMode: true,
+          // variableWidth: true,
+          // infinite: true,
         });
       });
     </script>

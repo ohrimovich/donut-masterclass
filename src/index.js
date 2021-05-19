@@ -10,6 +10,10 @@ refs.programButton.addEventListener('click', show);
 
 
 
+
+
+
+
 var helpers = {
 	addZeros: function (n) {
 		return (n < 10) ? '0' + n : '' + n;
@@ -21,7 +25,7 @@ function sliderInit() {
   $slider.each(function() {
     var $sliderParent = $(this).parent();
     $(this).slick({
-      
+       asNavFor: '.foto-slider',
       slidesToShow: 1,
       slidesToScroll: 1,
         dots: false,

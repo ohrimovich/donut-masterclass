@@ -150,7 +150,8 @@
   }
 }
 
-.reviews__number {
+.reviews__number,
+.active {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -179,4 +180,11 @@
   margin-left: 12px;
   vertical-align: middle;
   background-color: currentColor;
+}
+
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
 }
