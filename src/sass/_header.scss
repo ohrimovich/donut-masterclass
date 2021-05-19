@@ -123,8 +123,8 @@
   z-index: -1;
 
   @media screen and (max-width: 767.98px) {
-    top: 0;
-    left: 0;
+    top: -6px;
+    left: -12px;
 
     animation: animateX50Y100 5000ms 1000ms;
   }
@@ -148,7 +148,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    top: 0;
+    top: -35px;
     right: 137px;
 
      animation: animateX50Y100 5000ms 1000ms;
@@ -159,8 +159,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-    top: 0;
-    right: 0;
+    top: -171px;
+    right: -74px;
 
     animation: animateX50 4000ms 2900ms;
   }
