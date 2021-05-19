@@ -4,7 +4,8 @@
 @import './footer';
 
 .background {
-  position: relative;
+  position: absolute;
+  width: 100%;
   // background-image: url(../images/mobile/reviews-background_mobile@test.png);
   background-image: url(../images/mobile/mobile.svg);
   background-size: contain;
