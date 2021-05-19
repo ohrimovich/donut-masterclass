@@ -50,6 +50,7 @@
   border-left: none;
   border-bottom: 1px solid var(--button-color);
   color: var(--button-color);
+  background-color: transparent;
 
   &::placeholder {
     font-family: Montserrat, sans-serif;
