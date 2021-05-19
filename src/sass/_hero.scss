@@ -1,24 +1,22 @@
-// background-color задаю на секцию но нужно не забыть потом удалить
 .hero {
-  background-color: var(--primary-background-color);
-}
+  padding-bottom: 5px;
 
-.hero__container {
-  // @media screen and (min-width: 767.99px) {
-  //   padding-left: 68px;
-  // }
+  @media screen and (min-width: 767.99px) {
+    padding-bottom: 90px;
+  }
 
   @media screen and (min-width: 1279.98px) {
     position: relative;
+    padding-bottom: 120px;
 
     &::before {
       content: '';
       position: absolute;
       width: 178px;
       height: 421px;
-      left: -309px;
+      left: 0px;
       top: 22px;
-      transform: rotate(12.22deg);
+
       background-image: url(../images/desktop/header-spoon_desktop.png);
       background-repeat: no-repeat;
       background-size: contain;
@@ -97,7 +95,8 @@
 
 .social-links__hero {
   @media screen and (min-width: 768px) {
-    display: flex;
+    display: inline-flex;
     justify-content: start;
+    background-color: transparent;
   }
 }
