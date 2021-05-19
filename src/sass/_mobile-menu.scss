@@ -33,10 +33,16 @@
   line-height: 1.2;
   display: block;
   color: var(--main-text-color);
+  transition-property: transform;
 
   &:hover {
     color: #876655;
+    transform: scale(1.5);
   }
+}
+
+.menu-item__link {
+  transition-duration: 200ms;
 }
 
 .logo {
@@ -52,7 +58,13 @@
 }
 
 .svg-anime {
-  transition: 500ms linear,
-    transform 800ms ease-in-out;
-  transform: rotate(360deg);
+  transition-property: background-color,
+  transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+
+  &:hover {
+    transform: rotate(1080deg)
+  }
 }
