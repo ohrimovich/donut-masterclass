@@ -8,8 +8,8 @@ $(document).ready(function () {
   });
 
   $('.slider').slick({
-    // autoplay: true,
-    // centerMode: true,
+    autoplay: true,
+    centerMode: true,
     arrows: false,
     centerPadding: '60px',
     slidesToShow: 2,
