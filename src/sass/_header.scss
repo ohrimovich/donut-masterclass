@@ -47,13 +47,12 @@
 }
 
 .logo-page {
-
   @media screen and (max-width: 767px) {
     margin-top: 7px;
     margin-bottom: 33px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  @media screen and (min-width: 767.98px) and (max-width: 1279.98px) {
     text-align: left;
     margin-top: 27px;
     margin-bottom: 10px;
@@ -105,7 +104,7 @@
   align-items: center;
   justify-content: right;
 
-  @media screen and (min-width: 768.98px) and (max-width: 1279.98px) {
+  @media screen and (min-width: 767.98px) and (max-width: 1279.98px) {
     // padding-left: 68px;
   }
 
@@ -126,11 +125,11 @@
     top: -6px;
     left: -12px;
 
-    animation: animateX50Y100 5000ms 1000ms;
+    // animation: animateX50Y100 5000ms 1000ms;
   }
 
   .bg-img::before {
-    content: "translate(-40px, -70px)";
+    content: 'translate(-40px, -70px)';
   }
 
   @keyframes animateX50Y100 {
@@ -151,22 +150,22 @@
     top: -35px;
     right: 137px;
 
-     animation: animateX50Y100 5000ms 1000ms;
+    animation: animateX50Y100 5000ms 1000ms;
   }
 
   .bg-img::before {
-    content: "translateY(100px)";
+    content: 'translateY(100px)';
   }
 
   @media screen and (min-width: 1280px) {
-    top: -171px;
-    right: -74px;
+    top: 0;
+    right: 0;
 
     animation: animateX50 4000ms 2900ms;
   }
 
   .bg-img::before {
-    content: "translate(-50px, -70px)";
+    content: 'translate(-50px, -70px)';
   }
 
   @keyframes animateX50 {
