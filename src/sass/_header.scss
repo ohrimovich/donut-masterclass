@@ -108,7 +108,7 @@
     // padding-left: 68px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     justify-content: center;
   }
 }
@@ -122,8 +122,8 @@
   z-index: -1;
 
   @media screen and (max-width: 767.98px) {
-    top: -6px;
-    left: -12px;
+    top: 0;
+    left: 0;
 
     // animation: animateX50Y100 5000ms 1000ms;
   }
