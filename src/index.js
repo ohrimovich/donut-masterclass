@@ -1,7 +1,3 @@
 import './sass/main.scss';
 import './js/menu';
-import refs from './js/refs';
-import show from './js/showMore';
-
-refs.aboutButton.addEventListener('click', show);
-refs.programButton.addEventListener('click', show);
+import './js/showMore';
