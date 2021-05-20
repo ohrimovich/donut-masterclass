@@ -102,6 +102,10 @@
 
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 1279.98px) {
+    display: none;
+  }
 }
 
 .moreContentIsHiden {
