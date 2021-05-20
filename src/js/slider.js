@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var $status = $('.pagingInfo');
+  var $status = $('.reviews__number');
   var $slickElement = $('.slider');
 
   $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
@@ -15,7 +15,10 @@ $(document).ready(function () {
     slidesToShow: 2,
     variableWidth: true,
     dots: false,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
+    speed: 1500,
+    easing: 'ease',
+    asNavFor: '.reviews-text',
     responsive: [
       {
         breakpoint: 320,
@@ -28,4 +31,15 @@ $(document).ready(function () {
       },
     ],
   });
+});
+
+$('.reviews-text').slick({
+  centerMode: true,
+  arrows: false,
+  centerPadding: '0',
+  slidesToShow: 1,
+  // variableWidth: true,
+  dots: false,
+  asNavFor: '.slider',
+  fade: true,
 });
