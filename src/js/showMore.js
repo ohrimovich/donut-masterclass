@@ -1,9 +1,9 @@
 $('.content__btn-more').click(function() {
   $('.moreContentIsHiden').slideToggle();
-  if ($('.content__btn-more').text() == "Less") {
-    $(this).text("Read more")
-  } else {
+  if ($('.content__btn-more').text() == "Read more") {
     $(this).text("Less")
+  } else {
+    $(this).text("Read more")
   }
 });
 
