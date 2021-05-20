@@ -30,7 +30,7 @@ function sliderInit() {
       slidesToScroll: 1,
         dots: false,
       arrows: false,
-      infinite: true,
+      infinite: false,
       responsive: [
         {
           breakpoint: 767,
