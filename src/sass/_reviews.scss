@@ -151,7 +151,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+  @media screen and(max-width:767.98px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and(min-width:1279px) {
     font-size: 18px;
