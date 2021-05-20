@@ -150,28 +150,6 @@
   display: none;
 }
 
-// .program__more {
-//   @media screen and (max-width: 1279.97px) {
-//     margin-bottom: 10px;
-
-//     opacity: 1;
-//     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//       height 250ms cubic-bezier(0.4, 0, 0.2, 1) 400ms;
-//   }
-// }
-
-// .program__more--hidden {
-//   @media screen and (max-width: 1279.97px) {
-//     margin-bottom: 0;
-
-//     opacity: 0;
-//     height: 0;
-//     pointer-events: none;
-//     transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1),
-//       height 250ms cubic-bezier(0.4, 0, 0.2, 1) 400ms;
-//   }
-// }
-
 .points-list {
   display: flex;
   flex-wrap: wrap;
