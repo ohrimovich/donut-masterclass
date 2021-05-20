@@ -146,6 +146,11 @@
 .program__more {
   @media screen and (max-width: 1279.97px) {
     margin-bottom: 10px;
+  }
+}
+
+.program__more--hidden {
+  @media screen and (max-width: 1279.97px) {
     display: none;
   }
 }
@@ -283,7 +288,7 @@
   margin-left: auto;
   margin-top: 14px;
 
-  fill: #674d40;
+  fill: var(--hover-button-color);
 
   @media screen and (min-width: 1279.98px) {
     margin-top: 17px;
