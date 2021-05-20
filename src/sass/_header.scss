@@ -10,8 +10,8 @@
   }
 }
 .icon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 .mobile-menu-btn {
   z-index: 100;
@@ -33,7 +33,6 @@
   z-index: 4;
 }
 .logo-page {
-
   @media screen and (min-width: 1280px) {
     margin-right: 31px;
   }
@@ -76,6 +75,10 @@
   &:hover,
   &:focus {
     color: var(--button-color);
+  }
+
+  &:focus {
+    outline: 1px solid #575655;
   }
 }
 .list-item {
