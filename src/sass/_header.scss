@@ -1,18 +1,29 @@
 .icon-close {
   display: none;
 }
+
 .is-open {
   .icon-close {
     display: block;
   }
+
   .icon-menu {
     display: none;
   }
 }
+
 .icon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
+  padding-left: 7px;
+
+  // &:hover {
+  //         transition: transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  //         transform: rotate(-360deg);
+  //         transform-origin: center center;
+  // }
 }
+
 .mobile-menu-btn {
   z-index: 100;
   background-color: transparent;
@@ -24,18 +35,22 @@
   @media screen and (min-width: 1280px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) and (max-width: 1179.98px) {
     top: 26px;
     right: 67px;
   }
 }
+
 .open {
   z-index: 4;
 }
+
 .logo-page {
 
-  @media screen and (min-width: 1280px) {
-    margin-right: 31px;
+  @media screen and (max-width: 767px) {
+    margin-top: 7px;
+    margin-bottom: 33px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
@@ -43,19 +58,24 @@
     margin-top: 27px;
     margin-bottom: 10px;
   }
-  @media screen and (max-width: 767px) {
-    margin-top: 7px;
-    margin-bottom: 33px;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 38px;
+    margin-bottom: 57px;
+    padding-top: 31px;
   }
 }
+
 .nav {
   display: flex;
   z-index: 3;
+  padding-bottom: 30px;
 
   @media screen and (max-width: 1279.98px) {
     display: none;
   }
 }
+
 .nav-list__item {
   font-family: Montserrat;
   font-style: normal;
@@ -69,6 +89,7 @@
     margin-right: 20px;
   }
 }
+
 .nav-list__item {
   padding-top: 52px;
   padding-bottom: 52px;
@@ -78,46 +99,116 @@
     color: var(--button-color);
   }
 }
-.list-item {
-  margin-right: 20px;
-}
 
 .header {
   display: flex;
   align-items: center;
   justify-content: right;
 
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 57px;
-  }
-
   @media screen and (min-width: 768.98px) and (max-width: 1279.98px) {
     // padding-left: 68px;
   }
-  @media screen and (max-width: 767px) {
+
+  @media screen and (max-width: 768px) {
     justify-content: center;
   }
 }
+
 .nav-list {
   display: inline-flex;
 }
+
 .bg-img {
   position: absolute;
   z-index: -1;
 
-  @media screen and (max-width: 767px) {
-    top: 0;
-    left: 0;
+  @media screen and (max-width: 767.98px) {
+    top: -6px;
+    left: -12px;
+
+    animation: animateX50Y100 5000ms 1000ms;
   }
 
-  @media screen and (min-width: 767.98px) and (max-width: 1279.98px) {
-    top: 0;
+  .bg-img::before {
+    content: "translate(-40px, -70px)";
+  }
+
+  @keyframes animateX50Y100 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(-50px, -100px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    top: -35px;
     right: 137px;
+
+     animation: animateX50Y100 5000ms 1000ms;
+  }
+
+  .bg-img::before {
+    content: "translateY(100px)";
   }
 
   @media screen and (min-width: 1280px) {
-    top: 0;
-    right: 0;
+    top: -171px;
+    right: -74px;
+
+    animation: animateX50 4000ms 2900ms;
+  }
+
+  .bg-img::before {
+    content: "translate(-50px, -70px)";
+  }
+
+  @keyframes animateX50 {
+    0% {
+      transform: translateX(0);
+    }
+
+    50% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes animateY110 {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(110px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes animateX50Y100 {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(-50px, -100px);
+    }
+
+    100% {
+      transform: translate(0, 0);
+    }
   }
 }
 
@@ -125,5 +216,23 @@
   @media screen and (min-width: 1280px) {
     width: 158px;
     height: 71px;
+  }
+}
+
+.logo-page__svg {
+  animation: animate125 3000ms infinite 1000ms;
+}
+
+@keyframes animate125 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
