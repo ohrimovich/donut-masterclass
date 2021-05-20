@@ -158,7 +158,9 @@ body {
     background-color: var(--hover-button-color);
   }
 
-  &__link:focus {
-    outline: 1px solid #575655;
+  @media screen and (min-width: 1279.98px) {
+    &__link:focus {
+      outline: 1px solid #575655;
+    }
   }
 }

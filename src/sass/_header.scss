@@ -77,8 +77,10 @@
     color: var(--button-color);
   }
 
-  &:focus {
-    outline: 1px solid #575655;
+  @media screen and (min-width: 1279.98px) {
+    &:focus {
+      outline: 1px solid #575655;
+    }
   }
 }
 .list-item {
