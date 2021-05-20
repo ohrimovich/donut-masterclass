@@ -1,19 +1,33 @@
 <header>
   <div class="container">
     <div class="header">
-
-          <picture class="bg-img">
-      <source srcset="images/desktop/header-donuts_desktop.png 1x, images/desktop/header-donuts_desktop@2x.png 2x"
-        media="(min-width: 1280px)" type="image/png"
-      />
-      <source srcset="images/tablet/header-donuts_tablet.png 1x, images/tablet/header-donuts_tablet@2x.png 2x"
-        media="(min-width: 768px)" type="image/png"
-      />
-      <source srcset="images/mobile/header-donuts_mobile.png 1x, images/mobile/header-donuts_mobile@2x.png 2x"
-        media="(max-width: 767px)" type="image/png"
-      />
-      <img src="images/desktop/header-donuts_desktop.png" alt="donuts"/>
-    </picture>
+      <picture class="bg-img">
+        <source
+          srcset="
+            images/desktop/header-donuts_desktop.png    1x,
+            images/desktop/header-donuts_desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            images/tablet/header-donuts_tablet.png    1x,
+            images/tablet/header-donuts_tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            images/mobile/header-donuts_mobile.png    1x,
+            images/mobile/header-donuts_mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <img src="images/desktop/header-donuts_desktop.png" alt="donuts" />
+      </picture>
 
       <div class="logo-page">
         <svg width="96" height="43" class="logo-page__svg">
@@ -31,12 +45,15 @@
       </nav>
     </div>
 
-    <button class="mobile-menu-btn open" 
-            aria-expanded="false"
-            aria-controls="menu-container"
-            menu-button-open>
+    <button
+      class="mobile-menu-btn open"
+      aria-expanded="false"
+      aria-controls="menu-container"
+      menu-button-open
+    >
       <svg class="icon">
         <use class="icon-menu" width="30" height="16" href="./images/icons.svg#icon-menu"></use>
       </svg>
     </button>
+  </div>
 </header>
