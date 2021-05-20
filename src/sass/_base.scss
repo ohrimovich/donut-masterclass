@@ -63,6 +63,7 @@ img {
 }
 
 body {
+  position: relative;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
@@ -70,6 +71,19 @@ body {
   line-height: 1.2;
 
   color: var(--main-text-color);
+  background-image: url(../images/mobile/bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media screen and(min-width: 768px) {
+    background-image: url(../images/tablet/header-background_tablet.png);
+    background-position: left 219px top -137px;
+  }
+
+  @media screen and (min-width: 817px) {
+    background-image: url(../images/desktop/bg_desktop.svg);
+    background-position: 0 0;
+  }
 }
 
 .button {
