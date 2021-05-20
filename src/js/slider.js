@@ -11,11 +11,11 @@ $(document).ready(function () {
     autoplay: true,
     centerMode: true,
     arrows: false,
-    centerPadding: '60px',
+    centerPadding: '0',
     slidesToShow: 2,
     variableWidth: true,
     dots: false,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     responsive: [
       {
         breakpoint: 320,

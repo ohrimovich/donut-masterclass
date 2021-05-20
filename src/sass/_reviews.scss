@@ -213,15 +213,16 @@
 }
 
 .sleder__items {
-  transition: all 600ms;
+  // transition: all 3000ms;
   opacity: 0.4;
   text-align: center;
   width: 136px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 .slick-center {
   margin-top: 19px;
-  margin-right: 60px;
-  margin-left: 60px;
+
   width: 234px;
   opacity: 1;
   & img {
