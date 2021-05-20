@@ -75,12 +75,11 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: 767.98px) {
     background-image: url(../images/tablet/header-background_tablet.png);
-    background-position: left 219px top -137px;
   }
 
-  @media screen and (min-width: 817px) {
+  @media screen and (min-width: 1279.98px) {
     background-image: url(../images/desktop/bg_desktop.svg);
     background-position: 0 0;
   }
