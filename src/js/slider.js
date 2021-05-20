@@ -8,36 +8,58 @@ $(document).ready(function () {
   });
 
   $('.slider').slick({
-    autoplay: true,
+    autoplay: false,
     centerMode: true,
     arrows: false,
     centerPadding: '0',
     slidesToShow: 2,
     variableWidth: true,
     dots: false,
-    autoplaySpeed: 2000,
-    speed: 1500,
+    // autoplaySpeed: 2000,
+    speed: 500,
     easing: 'ease',
-    asNavFor: '.reviews-text',
-    responsive: [
-      {
-        breakpoint: 320,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1,
-        },
-      },
-    ],
+    asNavFor: '.reviews__text',
+   responsive: [
+            {
+              breakpoint: 767,
+       settings: {
+                variableWidth: false,
+                slidesToShow: 1,
+                centerMode: false,
+                
+                
+              },
+            },
+          ],
+
+
+
+
+
+
+
+
+
+    // responsive: [
+    //   {
+    //     breakpoint: 320,
+    //     settings: {
+    //       arrows: false,
+    //       centerMode: true,
+    //       centerPadding: '40px',
+    //       slidesToShow: 1,
+    //     },
+    //   },
+    // ],
   });
 });
 
-$('.reviews-text').slick({
-  centerMode: true,
+$('.reviews__text').slick({
+  // centerMode: true,
   arrows: false,
   centerPadding: '0',
   slidesToShow: 1,
+  asNavFor: '.slider',
   // variableWidth: true,
   dots: false,
   asNavFor: '.slider',

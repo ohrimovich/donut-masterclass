@@ -46,7 +46,7 @@
 }
 
 .reviews-wrapper__foto--center {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767.98px) {
     margin-top: 20px;
   }
 }
@@ -65,10 +65,10 @@
   line-height: 0.75;
   text-align: center;
   margin-bottom: 15px;
-  @media screen and(min-width:767px) {
+  @media screen and(min-width:767.98px) {
     margin-bottom: 10px;
   }
-  @media screen and(min-width:1279px) {
+  @media screen and(min-width:1279.98px) {
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 0.7;
@@ -140,7 +140,7 @@
 
   margin-bottom: 15px;
 
-  @media screen and(min-width:1279px) {
+  @media screen and(min-width:1279.98px) {
     font-size: 16px;
     line-height: 1;
   }
@@ -153,7 +153,7 @@
   line-height: 1.25;
   margin-bottom: 30px;
 
-  @media screen and(min-width:1279px) {
+  @media screen and(min-width:1279.98px) {
     font-size: 18px;
     line-height: 1.2;
   }
@@ -164,7 +164,7 @@
   font-size: 14px;
   line-height: 1.2;
   color: var(--button-color);
-  @media screen and(min-width:1279px) {
+  @media screen and(min-width:1279.98px) {
     font-size: 16px;
     line-height: 1.25;
   }
@@ -190,7 +190,7 @@
   background-color: currentColor;
 }
 .slider {
-  width: 626px;
+  max-width: 626px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -213,22 +213,32 @@
 }
 
 .sleder__items {
-  opacity: 0.4;
+  opacity: 0.9;
   text-align: center;
   width: 234px;
-  transition: all 1000ms;
+  transition: all 250ms;
 }
 .slick-center {
-  transition: all 1000ms;
+  transition: all 250ms;
   margin-top: 19px;
 
   width: 234px;
   opacity: 1;
   & img {
-    width: 234px;
-    height: 234px;
+    @media screen and (min-width: 767.98px) {
+      width: 234px;
+      height: 234px;
+    }
+    transition: all 250ms;
   }
 }
+
+.slider .slick-list {
+  @media screen and (min-width: 767.98px) {
+    height: 326px;
+  }
+}
+
 .reviews-text {
   text-align: center;
 }
