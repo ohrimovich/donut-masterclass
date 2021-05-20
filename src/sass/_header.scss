@@ -132,19 +132,19 @@
     content: 'translate(-40px, -70px)';
   }
 
-  @keyframes animateX50Y100 {
-    0% {
-      transform: translate(0, 0);
-    }
+  // @keyframes animateX50Y100 {
+  //   0% {
+  //     transform: translate(0, 0);
+  //   }
 
-    50% {
-      transform: translate(-50px, -100px);
-    }
+  //   50% {
+  //     transform: translate(-50px, -100px);
+  //   }
 
-    100% {
-      transform: translate(0, 0);
-    }
-  }
+  //   100% {
+  //     transform: translate(0, 0);
+  //   }
+  // }
 
   @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     top: -35px;
@@ -153,9 +153,9 @@
     animation: animateX50Y100 5000ms 1000ms;
   }
 
-  .bg-img::before {
-    content: 'translateY(100px)';
-  }
+  // .bg-img::before {
+  //   content: 'translateY(100px)';
+  // }
 
   @media screen and (min-width: 1280px) {
     top: 0;
@@ -164,51 +164,51 @@
     animation: animateX50 4000ms 2900ms;
   }
 
-  .bg-img::before {
-    content: 'translate(-50px, -70px)';
-  }
+  // .bg-img::before {
+  //   content: 'translate(-50px, -70px)';
+  // }
 
-  @keyframes animateX50 {
-    0% {
-      transform: translateX(0);
-    }
+  // @keyframes animateX50 {
+  //   0% {
+  //     transform: translateX(0);
+  //   }
 
-    50% {
-      transform: translateX(50px);
-    }
+  //   50% {
+  //     transform: translateX(50px);
+  //   }
 
-    100% {
-      transform: translateX(0);
-    }
-  }
+  //   100% {
+  //     transform: translateX(0);
+  //   }
+  // }
 
-  @keyframes animateY110 {
-    0% {
-      transform: translateY(0);
-    }
+  // @keyframes animateY110 {
+  //   0% {
+  //     transform: translateY(0);
+  //   }
 
-    50% {
-      transform: translateY(110px);
-    }
+  //   50% {
+  //     transform: translateY(110px);
+  //   }
 
-    100% {
-      transform: translateY(0);
-    }
-  }
+  //   100% {
+  //     transform: translateY(0);
+  //   }
+  // }
 
-  @keyframes animateX50Y100 {
-    0% {
-      transform: translate(0, 0);
-    }
+  // @keyframes animateX50Y100 {
+  //   0% {
+  //     transform: translate(0, 0);
+  //   }
 
-    50% {
-      transform: translate(-50px, -100px);
-    }
+  //   50% {
+  //     transform: translate(-50px, -100px);
+  //   }
 
-    100% {
-      transform: translate(0, 0);
-    }
-  }
+  //   100% {
+  //     transform: translate(0, 0);
+  //   }
+  // }
 }
 
 .logo-page__svg {
