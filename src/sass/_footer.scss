@@ -47,7 +47,11 @@
 
   &:hover,
   &:focus {
-    color: var(--button-color);
+    color: var(--hover-button-color);
+  }
+
+  &:focus {
+    outline: 1px solid #575655;
   }
 }
 
