@@ -1,40 +1,42 @@
-// .about {
-//   padding-bottom: 37px;
-// }
+
+.about {
+  padding-bottom: 25px;
+
+  @media screen and (min-width: 1279px) {
+    padding-bottom: 39px;
+  }
+}
+
 
 .about-container {
-    position: relative;
+  position: relative;
 
-    @media screen and (min-width: 768px) {
-    // display: flex;
-    // align-items: center;
+  @media screen and (min-width: 768px) {
     width: 690px;
   }
 
-  @media screen and (min-width:1280px){
+  @media screen and (min-width: 1280px) {
     width: 980px;
   }
 }
 
 .about__picture {
-
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     position: absolute;
     display: block;
-    content: "";
+    content: '';
 
     top: 6px;
     left: -20px;
   }
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     top: -50px;
     left: -70px;
   }
 }
 
 .content {
-
   @media screen and (max-width: 767px) {
     max-width: 290px;
   }
@@ -47,7 +49,6 @@
   @media screen and (min-width: 1280px) {
     max-width: 392px;
     margin-left: 530px;
-
   }
 }
 
@@ -63,12 +64,12 @@
     text-align: center;
   }
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-bottom: 18px;
     padding-top: 18px;
   }
 
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     font-size: 36px;
     padding-bottom: 32px;
     padding-top: 32px;
@@ -76,8 +77,7 @@
 }
 
 .content__list {
-
-  @media screen and (min-width: 1280px){
+  @media screen and (min-width: 1280px) {
     width: 380px;
     height: 394px;
   }
@@ -95,6 +95,12 @@
     font-size: 18px;
     line-height: 1.22;
   }
+
+  &:last-child {
+    @media screen and (min-width: 1279px) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .content__btn-more {
@@ -107,13 +113,13 @@
   border: none;
   background-color: transparent;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1279.98px) {
     display: none;
   }
 }
 
-@media screen and (max-width: 1279px) {
-  .moreContentIsHiden {
+.moreContentIsHiden {
+  @media screen and (max-width: 1279.97px) {
     display: none;
   }
 }
