@@ -72,7 +72,6 @@
     margin-bottom: 24px;
     font-size: 36px;
     line-height: 0.7;
-    // line-height: 65px;
   }
 }
 
@@ -82,7 +81,6 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 0.75;
-  // line-height: 2.71;
 
   margin-bottom: 15px;
 }
@@ -133,8 +131,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
-
-  // line-height: 4.6;
 
   color: var(--main-text-color);
 
@@ -240,10 +236,6 @@
       width: 186px;
       height: 186px;
     }
-    // @media screen and (max-width: 419.98px) {
-    //   width: 110px;
-    //   height: 110px;
-    // }
 
     transition: all 250ms;
   }

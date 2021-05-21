@@ -89,14 +89,14 @@
       transform: scale(1);
       letter-spacing: 0.03em;
       background-color: var(--button-color);
-      box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
+      // box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
     }
 
     100% {
       transform: scale(1.25);
       letter-spacing: 0.15em;
       background-color: #674d40;
-      box-shadow: 0px 0px 10px 15px rgba(255, 255, 255, 0.8);
+      // box-shadow: 0px 0px 10px 15px rgba(255, 255, 255, 0.8);
     }
   }
 
