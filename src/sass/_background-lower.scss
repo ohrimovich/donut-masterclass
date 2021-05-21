@@ -15,6 +15,10 @@
     background-image: url(../images/tablet/tablet.svg);
     background-size: contain;
   }
+
+  @media screen and (min-width: 815px) {
+    background-size: cover;
+  }
   @media screen and (min-width: 1280px) {
     background-image: url(../images/desktop/dectop.svg);
     background-size: cover;
