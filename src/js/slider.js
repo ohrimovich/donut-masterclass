@@ -8,14 +8,14 @@ $(document).ready(function () {
   });
 
   $('.slider').slick({
-    autoplay: false,
+    autoplay: true,
     centerMode: true,
     arrows: false,
     centerPadding: '0',
     slidesToShow: 2,
     variableWidth: true,
     dots: false,
-    // autoplaySpeed: 2000,
+    autoplaySpeed: 2000,
     speed: 500,
     easing: 'ease',
     asNavFor: '.reviews__text',
